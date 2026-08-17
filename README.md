@@ -22,7 +22,7 @@ This project is a **Codex adaptation** of [dsh-routing-suite](https://github.com
 要求：PowerShell 7 (`pwsh`)、Node.js、支持 Plugins 与 Hooks 的 Codex CLI。
 
 ```powershell
-git clone <your-repo-url> dsh-routing-suite-codex
+git clone https://github.com/realstephenxu/dsh-routing-suite-codex
 Set-Location .\dsh-routing-suite-codex
 pwsh -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\Verify.ps1
 pwsh -NoLogo -NoProfile -ExecutionPolicy Bypass -File .\Install.ps1
