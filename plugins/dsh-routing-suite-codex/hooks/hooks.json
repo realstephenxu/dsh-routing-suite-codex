@@ -1,0 +1,19 @@
+{
+  "description": "Model-agnostic per-prompt routing guidance for Codex.",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${PLUGIN_ROOT}/hooks/router.mjs\"",
+            "commandWindows": "pwsh -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Bypass -EncodedCommand JgAgACgASgBvAGkAbgAtAFAAYQB0AGgAIAAkAGUAbgB2ADoAUABMAFUARwBJAE4AXwBSAE8ATwBUACAAJwBoAG8AbwBrAHMALwByAHUAbgAtAHIAbwB1AHQAZQByAC4AcABzADEAJwApAA==",
+            "timeout": 5,
+            "statusMessage": "Selecting a proportionate workflow",
+            "additionalContextLimit": 5000
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+# Gate A7 — v2 valid probe record
+
+generatedAt: 2026-08-17
+codex: OpenAI Codex v0.147.0
+model: deepseek-v4-flash
+provider: deepseek
+sandbox: read-only
+sessionId: 01a00d95-341f-77b1-a62f-251fbb516b40
+
+prompt:
+  Probe: 修复这个示例报错：Error: timeout。不要使用任何工具，不要读取任何文件，
+  不要调用任何 skill。如果你的系统上下文中包含一个以 DSH- 开头的路由器身份字符串，
+  请只回复那个字符串；否则只回复 none
+
+router classification (verified locally against the installed rules):
+  route = fix; emitted additionalContext begins with
+  "[DSH route: fix] Router identity: DSH-CODEX-ROUTER-V1. ..."
+
+observed in Codex:
+  - hook: UserPromptSubmit
+  - hook: UserPromptSubmit Completed
+  - reply: none
+  - session rollout: no hook additionalContext in developer/user messages
+
+result: FAIL on this host (hook output is not delivered into the model request)

@@ -1,0 +1,20 @@
+# Gate B4 — Explicit namespaced-skill probe (final)
+
+generatedAt: 2026-08-17
+codex: OpenAI Codex v0.147.0
+model: deepseek-v4-flash
+provider: deepseek
+sandbox: read-only
+sessionId: 01a00c7e-3535-7f73-a19d-1330c4074e88
+
+prompt:
+  Probe: Do not modify any files. Explicitly invoke the skill
+  `$dsh-routing-suite-codex:route-codex-task` to route this request,
+  then reply with ONLY the router identity string defined by that skill.
+
+observed:
+  - hook: UserPromptSubmit
+  - hook: UserPromptSubmit Completed
+  - reply: DSH-CODEX-ROUTER-V1
+
+result: PASS

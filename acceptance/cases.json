@@ -1,0 +1,18 @@
+[
+  { "id": "off-greeting", "prompt": "你好！", "route": "off", "scope": "no_engineering" },
+  { "id": "off-casual", "prompt": "谢谢你的帮助。", "route": "off", "scope": "no_engineering" },
+  { "id": "plan-explicit", "prompt": "只给实施计划，不要修改任何文件。", "route": "plan", "scope": "read_only" },
+  { "id": "plan-permission", "prompt": "实现一个缓存层。", "permission_mode": "plan", "route": "plan", "scope": "read_only" },
+  { "id": "inspect-explain", "prompt": "解释这个认证模块的工作方式，不要修改。", "route": "inspect", "scope": "read_only" },
+  { "id": "inspect-review", "prompt": "审查当前实现并报告风险，不要改代码。", "route": "inspect", "scope": "read_only" },
+  { "id": "inspect-diagnose", "prompt": "诊断登录报错并告诉我根因。", "route": "inspect", "scope": "read_only" },
+  { "id": "inspect-status", "prompt": "查看测试状态并总结失败项。", "route": "inspect", "scope": "read_only" },
+  { "id": "fix-test", "prompt": "修复失败的单元测试并验证。", "route": "fix", "scope": "change" },
+  { "id": "fix-security", "prompt": "修复路径穿越漏洞并增加回归测试。", "route": "fix", "scope": "change" },
+  { "id": "build-feature", "prompt": "实现一个健康检查端点并测试。", "route": "build", "scope": "change" },
+  { "id": "build-adapt", "prompt": "把这个插件适配到 Codex 并验证。", "route": "build", "scope": "change" },
+  { "id": "build-migrate", "prompt": "迁移配置格式并保留向后兼容。", "route": "build", "scope": "change" },
+  { "id": "build-refactor", "prompt": "重构解析器以减少重复并运行测试。", "route": "build", "scope": "change" },
+  { "id": "adaptive-fix-refactor", "prompt": "修复崩溃，同时重构相关模块并验证。", "route": "adaptive", "scope": "change" },
+  { "id": "adaptive-fix-build", "prompt": "修复超时问题并新增可配置重试机制。", "route": "adaptive", "scope": "change" }
+]

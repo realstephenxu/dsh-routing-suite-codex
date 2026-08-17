@@ -1,0 +1,4 @@
+interface:
+  display_name: "Route Codex Task"
+  short_description: "Choose a fitting Codex workflow for each prompt"
+  default_prompt: "Use $route-codex-task to choose a proportionate workflow for this request."

@@ -1,0 +1,37 @@
+{
+  "name": "dsh-routing-suite-codex",
+  "version": "0.2.0",
+  "description": "Model-agnostic, per-prompt workflow routing for Codex",
+  "author": {
+    "name": "yjh051108 / Codex adaptation",
+    "url": "https://github.com/yjh051108"
+  },
+  "homepage": "https://github.com/yjh051108/dsh-routing-suite",
+  "repository": "https://github.com/yjh051108/dsh-routing-suite",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "routing",
+    "hooks",
+    "workflow",
+    "windows"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "DSH Routing Suite for Codex",
+    "shortDescription": "Route each prompt without model-specific assumptions",
+    "longDescription": "Adds a stateless UserPromptSubmit router that selects a proportionate plan, inspect, fix, build, or adaptive workflow for the current prompt. It does not branch on the active Codex model.",
+    "developerName": "yjh051108 / Codex adaptation",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read"
+    ],
+    "websiteURL": "https://github.com/yjh051108/dsh-routing-suite",
+    "defaultPrompt": [
+      "Route this request and use the smallest fitting workflow.",
+      "Inspect this failure before deciding whether to edit.",
+      "Implement this change and verify the result."
+    ],
+    "brandColor": "#4F46E5"
+  }
+}

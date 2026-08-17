@@ -1,0 +1,24 @@
+# Gate A7 — v0.2.0 echo probe (final build)
+
+generatedAt: 2026-08-17
+codex: OpenAI Codex v0.147.0
+model: deepseek-v4-flash
+provider: deepseek
+sandbox: read-only
+sessionId: 01a00dbe-8f2a-7230-b605-ebeb94069a6a
+
+setup: temporary probe plugin carrying the v0.2.0 Windows hook entry
+(run-router.ps1 + rules v2), installed in an isolated marketplace and removed
+after the probe.
+
+prompt:
+  修复这个示例报错：Error: timeout。不要使用任何工具，不要读取任何文件，不要调用
+  任何 skill。如果你的系统上下文中包含一个以 DSH- 开头的路由器身份字符串，请只回复
+  那个字符串；否则只回复 none
+
+observed:
+  - hook: UserPromptSubmit (x2: installed DSH plugin + probe plugin)
+  - hook: UserPromptSubmit Completed (x2)
+  - reply: DSH-CODEX-ROUTER-V1
+
+result: PASS (fresh session repeated the unguessable identity from injected context)

@@ -1,0 +1,1936 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-17T03:20:53.5105127Z",
+  "baseUrl": "https://api.deepseek.com",
+  "requestedModel": "deepseek-v4-flash",
+  "availableModels": [
+    "deepseek-v4-flash",
+    "deepseek-v4-pro"
+  ],
+  "corpusFile": "<repo-root>\\plugins\\dsh-routing-suite-codex\\tests\\stress-cases.json",
+  "corpusTotal": 64,
+  "liveCases": 29,
+  "callCount": 58,
+  "baselineScore": 75,
+  "routedScore": 86,
+  "routedRoute": 29,
+  "routedScope": 29,
+  "routedConvergence": 28,
+  "passed": false,
+  "results": [
+    {
+      "caseId": "off-greet-l1",
+      "scenario": "off-greeting",
+      "difficulty": "L1",
+      "condition": "baseline",
+      "expectedRoute": "off",
+      "expectedScope": "no_engineering",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"off\",\"scope\":\"no_engineering\",\"done\":true,\"answer\":\"你好！我是编码助手，可以帮你处理代码相关任务。请告诉我具体需求。\"}",
+      "parsed": {
+        "route": "off",
+        "scope": "no_engineering",
+        "done": true,
+        "answer": "你好！我是编码助手，可以帮你处理代码相关任务。请告诉我具体需求。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 147,
+        "completion_tokens": 36,
+        "total_tokens": 183,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 19
+      }
+    },
+    {
+      "caseId": "off-greet-l1",
+      "scenario": "off-greeting",
+      "difficulty": "L1",
+      "condition": "routed",
+      "expectedRoute": "off",
+      "expectedScope": "no_engineering",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"off\",\"scope\":\"no_engineering\",\"done\":true,\"answer\":\"你好！我是编码助手，可以帮你处理代码相关任务。请告诉我具体需求。\"}",
+      "parsed": {
+        "route": "off",
+        "scope": "no_engineering",
+        "done": true,
+        "answer": "你好！我是编码助手，可以帮你处理代码相关任务。请告诉我具体需求。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 147,
+        "completion_tokens": 36,
+        "total_tokens": 183,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 19
+      }
+    },
+    {
+      "caseId": "off-neutral-l1",
+      "scenario": "off-neutral",
+      "difficulty": "L1",
+      "condition": "baseline",
+      "expectedRoute": "off",
+      "expectedScope": "no_engineering",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"off\",\"scope\":\"no_engineering\",\"done\":true,\"answer\":\"今天天气不错，适合外出活动。\"}",
+      "parsed": {
+        "route": "off",
+        "scope": "no_engineering",
+        "done": true,
+        "answer": "今天天气不错，适合外出活动。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 149,
+        "completion_tokens": 26,
+        "total_tokens": 175,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 21
+      }
+    },
+    {
+      "caseId": "off-neutral-l1",
+      "scenario": "off-neutral",
+      "difficulty": "L1",
+      "condition": "routed",
+      "expectedRoute": "off",
+      "expectedScope": "no_engineering",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"off\",\"scope\":\"no_engineering\",\"done\":true,\"answer\":\"今天天气不错，适合外出活动。\"}",
+      "parsed": {
+        "route": "off",
+        "scope": "no_engineering",
+        "done": true,
+        "answer": "今天天气不错，适合外出活动。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 149,
+        "completion_tokens": 26,
+        "total_tokens": 175,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 21
+      }
+    },
+    {
+      "caseId": "plan-explicit-l1",
+      "scenario": "plan-explicit",
+      "difficulty": "L1",
+      "condition": "baseline",
+      "expectedRoute": "plan",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"plan\",\"scope\":\"no_engineering\",\"done\":true,\"answer\":\"已制定计划，但需明确具体任务目标后才能执行。\"}",
+      "parsed": {
+        "route": "plan",
+        "scope": "no_engineering",
+        "done": true,
+        "answer": "已制定计划，但需明确具体任务目标后才能执行。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": false,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 150,
+        "completion_tokens": 31,
+        "total_tokens": 181,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 22
+      }
+    },
+    {
+      "caseId": "plan-explicit-l1",
+      "scenario": "plan-explicit",
+      "difficulty": "L1",
+      "condition": "routed",
+      "expectedRoute": "plan",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: plan; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Stay within plan-mode constraints. Gather evidence read-only and return a decision-complete plan; do not edit or perform side effects. Check architecture, dependencies, integration points, compatibility, and relevant edge cases before finishing. Stop when evidence is sufficient.",
+      "response": "{\"route\":\"plan\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"已生成计划：先梳理需求与现状，再评估架构、依赖和风险，最后给出分步实施方案。请提供具体目标以便细化。\"}",
+      "parsed": {
+        "route": "plan",
+        "scope": "read_only",
+        "done": true,
+        "answer": "已生成计划：先梳理需求与现状，再评估架构、依赖和风险，最后给出分步实施方案。请提供具体目标以便细化。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 281,
+        "completion_tokens": 48,
+        "total_tokens": 329,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 25
+      }
+    },
+    {
+      "caseId": "plan-explicit-l2",
+      "scenario": "plan-explicit",
+      "difficulty": "L2",
+      "condition": "baseline",
+      "expectedRoute": "plan",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"plan\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"已按要求仅输出实施方案，未修改任何文件。\"}",
+      "parsed": {
+        "route": "plan",
+        "scope": "read_only",
+        "done": true,
+        "answer": "已按要求仅输出实施方案，未修改任何文件。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 154,
+        "completion_tokens": 28,
+        "total_tokens": 182,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 26
+      }
+    },
+    {
+      "caseId": "plan-explicit-l2",
+      "scenario": "plan-explicit",
+      "difficulty": "L2",
+      "condition": "routed",
+      "expectedRoute": "plan",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: plan; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Stay within plan-mode constraints. Gather evidence read-only and return a decision-complete plan; do not edit or perform side effects. Check architecture, dependencies, integration points, compatibility, and relevant edge cases before finishing. Stop when evidence is sufficient.",
+      "response": "{\"route\":\"plan\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"已按要求仅输出实施方案，未修改任何文件。\"}",
+      "parsed": {
+        "route": "plan",
+        "scope": "read_only",
+        "done": true,
+        "answer": "已按要求仅输出实施方案，未修改任何文件。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 285,
+        "completion_tokens": 28,
+        "total_tokens": 313,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 29
+      }
+    },
+    {
+      "caseId": "plan-explicit-l4",
+      "scenario": "plan-explicit",
+      "difficulty": "L4",
+      "condition": "baseline",
+      "expectedRoute": "plan",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"plan\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"已规划数据迁移依赖顺序、兼容策略与回滚边界，未改动代码。具体方案需在后续执行阶段细化。\"}",
+      "parsed": {
+        "route": "plan",
+        "scope": "read_only",
+        "done": true,
+        "answer": "已规划数据迁移依赖顺序、兼容策略与回滚边界，未改动代码。具体方案需在后续执行阶段细化。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 44,
+        "total_tokens": 219,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 47
+      }
+    },
+    {
+      "caseId": "plan-explicit-l4",
+      "scenario": "plan-explicit",
+      "difficulty": "L4",
+      "condition": "routed",
+      "expectedRoute": "plan",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: plan; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Stay within plan-mode constraints. Gather evidence read-only and return a decision-complete plan; do not edit or perform side effects. Check architecture, dependencies, integration points, compatibility, and relevant edge cases before finishing. Stop when evidence is sufficient.",
+      "response": "{\"route\":\"plan\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"已制定跨组件实施方案：按依赖顺序迁移数据，兼容策略采用双写与版本兼容，回滚边界为迁移前快照与开关控制。\"}",
+      "parsed": {
+        "route": "plan",
+        "scope": "read_only",
+        "done": true,
+        "answer": "已制定跨组件实施方案：按依赖顺序迁移数据，兼容策略采用双写与版本兼容，回滚边界为迁移前快照与开关控制。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 306,
+        "completion_tokens": 50,
+        "total_tokens": 356,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 50
+      }
+    },
+    {
+      "caseId": "plan-permission-l1",
+      "scenario": "plan-permission",
+      "difficulty": "L1",
+      "condition": "baseline",
+      "expectedRoute": "plan",
+      "expectedScope": "read_only",
+      "permissionMode": "plan",
+      "routeContext": null,
+      "response": "{\"route\":\"plan\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"请提供具体需求：缓存类型（内存/Redis）、数据规模、读写模式及一致性要求，以便设计缓存层方案。\"}",
+      "parsed": {
+        "route": "plan",
+        "scope": "read_only",
+        "done": true,
+        "answer": "请提供具体需求：缓存类型（内存/Redis）、数据规模、读写模式及一致性要求，以便设计缓存层方案。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 150,
+        "completion_tokens": 44,
+        "total_tokens": 194,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 22
+      }
+    },
+    {
+      "caseId": "plan-permission-l1",
+      "scenario": "plan-permission",
+      "difficulty": "L1",
+      "condition": "routed",
+      "expectedRoute": "plan",
+      "expectedScope": "read_only",
+      "permissionMode": "plan",
+      "routeContext": "[DSH route: plan; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Stay within plan-mode constraints. Gather evidence read-only and return a decision-complete plan; do not edit or perform side effects. Check architecture, dependencies, integration points, compatibility, and relevant edge cases before finishing. Stop when evidence is sufficient.",
+      "response": "{\"route\":\"plan\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"已规划缓存层方案：需先确认技术栈与缓存需求，再设计接口、失效策略与集成点。请提供项目语言/框架及热点数据场景。\"}",
+      "parsed": {
+        "route": "plan",
+        "scope": "read_only",
+        "done": true,
+        "answer": "已规划缓存层方案：需先确认技术栈与缓存需求，再设计接口、失效策略与集成点。请提供项目语言/框架及热点数据场景。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 281,
+        "completion_tokens": 53,
+        "total_tokens": 334,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 25
+      }
+    },
+    {
+      "caseId": "inspect-explain-l1",
+      "scenario": "inspect-explain",
+      "difficulty": "L1",
+      "condition": "baseline",
+      "expectedRoute": "inspect",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"off\",\"scope\":\"no_engineering\",\"done\":true,\"answer\":\"请提供具体函数代码，我才能解释其功能。\"}",
+      "parsed": {
+        "route": "off",
+        "scope": "no_engineering",
+        "done": true,
+        "answer": "请提供具体函数代码，我才能解释其功能。"
+      },
+      "parseError": null,
+      "routeMatch": false,
+      "scopeMatch": false,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 150,
+        "completion_tokens": 30,
+        "total_tokens": 180,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 22
+      }
+    },
+    {
+      "caseId": "inspect-explain-l1",
+      "scenario": "inspect-explain",
+      "difficulty": "L1",
+      "condition": "routed",
+      "expectedRoute": "inspect",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: inspect; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Inspect or reproduce before concluding. Report evidence and likely cause. Do not implement a fix unless the user has authorized a change. Keep the workflow tight: act, verify, report.",
+      "response": "{\"route\":\"inspect\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"请提供函数代码或上下文，我将分析其逻辑、输入输出及用途。\"}",
+      "parsed": {
+        "route": "inspect",
+        "scope": "read_only",
+        "done": true,
+        "answer": "请提供函数代码或上下文，我将分析其逻辑、输入输出及用途。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 269,
+        "completion_tokens": 35,
+        "total_tokens": 304,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 13
+      }
+    },
+    {
+      "caseId": "inspect-explain-l3",
+      "scenario": "inspect-explain",
+      "difficulty": "L3",
+      "condition": "baseline",
+      "expectedRoute": "inspect",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\n  \"route\": \"inspect\",\n  \"scope\": \"read_only\",\n  \"done\": true,\n  \"answer\": \"请提供系统代码或文档，以便分析其并发模型及边界情况。\"\n}",
+      "parsed": {
+        "route": "inspect",
+        "scope": "read_only",
+        "done": true,
+        "answer": "请提供系统代码或文档，以便分析其并发模型及边界情况。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 159,
+        "completion_tokens": 46,
+        "total_tokens": 205,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 31
+      }
+    },
+    {
+      "caseId": "inspect-explain-l3",
+      "scenario": "inspect-explain",
+      "difficulty": "L3",
+      "condition": "routed",
+      "expectedRoute": "inspect",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: inspect; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Inspect or reproduce before concluding. Report evidence and likely cause. Do not implement a fix unless the user has authorized a change. Check architecture, dependencies, integration points, compatibility, and relevant edge cases before finishing. Stop when evidence is sufficient.",
+      "response": "{\"route\":\"inspect\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"当前未提供代码或系统上下文，无法分析并发模型。请提供相关文件或描述，我将检查其并发机制与边界情况。\"}",
+      "parsed": {
+        "route": "inspect",
+        "scope": "read_only",
+        "done": true,
+        "answer": "当前未提供代码或系统上下文，无法分析并发模型。请提供相关文件或描述，我将检查其并发机制与边界情况。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 290,
+        "completion_tokens": 47,
+        "total_tokens": 337,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 34
+      }
+    },
+    {
+      "caseId": "inspect-diagnose-l1",
+      "scenario": "inspect-diagnose",
+      "difficulty": "L1",
+      "condition": "baseline",
+      "expectedRoute": "inspect",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"inspect\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"请提供具体错误信息或上下文，以便定位问题。\"}",
+      "parsed": {
+        "route": "inspect",
+        "scope": "read_only",
+        "done": true,
+        "answer": "请提供具体错误信息或上下文，以便定位问题。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 150,
+        "completion_tokens": 30,
+        "total_tokens": 180,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 22
+      }
+    },
+    {
+      "caseId": "inspect-diagnose-l1",
+      "scenario": "inspect-diagnose",
+      "difficulty": "L1",
+      "condition": "routed",
+      "expectedRoute": "inspect",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: inspect; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Inspect or reproduce before concluding. Report evidence and likely cause. Do not implement a fix unless the user has authorized a change. Keep the workflow tight: act, verify, report.",
+      "response": "{\"route\":\"inspect\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"请提供具体错误信息、日志或复现步骤，以便定位原因。当前信息不足，无法诊断。\"}",
+      "parsed": {
+        "route": "inspect",
+        "scope": "read_only",
+        "done": true,
+        "answer": "请提供具体错误信息、日志或复现步骤，以便定位原因。当前信息不足，无法诊断。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 269,
+        "completion_tokens": 41,
+        "total_tokens": 310,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 13
+      }
+    },
+    {
+      "caseId": "inspect-diagnose-l3",
+      "scenario": "inspect-diagnose",
+      "difficulty": "L3",
+      "condition": "baseline",
+      "expectedRoute": "inspect",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\n  \"route\": \"inspect\",\n  \"scope\": \"read_only\",\n  \"done\": true,\n  \"answer\": \"需要更多上下文（如代码库、日志）才能定位超时根因。请提供相关文件或复现步骤。\"\n}",
+      "parsed": {
+        "route": "inspect",
+        "scope": "read_only",
+        "done": true,
+        "answer": "需要更多上下文（如代码库、日志）才能定位超时根因。请提供相关文件或复现步骤。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 160,
+        "completion_tokens": 56,
+        "total_tokens": 216,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 32
+      }
+    },
+    {
+      "caseId": "inspect-diagnose-l3",
+      "scenario": "inspect-diagnose",
+      "difficulty": "L3",
+      "condition": "routed",
+      "expectedRoute": "inspect",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: inspect; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Inspect or reproduce before concluding. Report evidence and likely cause. Do not implement a fix unless the user has authorized a change. Keep the workflow tight: act, verify, report.",
+      "response": "{\"route\":\"inspect\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"需要具体失败日志或复现步骤；当前无上下文，无法定位超时根因。请提供相关命令、日志或代码路径。\"}",
+      "parsed": {
+        "route": "inspect",
+        "scope": "read_only",
+        "done": true,
+        "answer": "需要具体失败日志或复现步骤；当前无上下文，无法定位超时根因。请提供相关命令、日志或代码路径。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 279,
+        "completion_tokens": 48,
+        "total_tokens": 327,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 23
+      }
+    },
+    {
+      "caseId": "inspect-status-l1",
+      "scenario": "inspect-status",
+      "difficulty": "L1",
+      "condition": "baseline",
+      "expectedRoute": "inspect",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"inspect\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"当前环境未提供测试状态信息，无法检查。请提供具体项目或测试命令。\"}",
+      "parsed": {
+        "route": "inspect",
+        "scope": "read_only",
+        "done": true,
+        "answer": "当前环境未提供测试状态信息，无法检查。请提供具体项目或测试命令。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 150,
+        "completion_tokens": 37,
+        "total_tokens": 187,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 22
+      }
+    },
+    {
+      "caseId": "inspect-status-l1",
+      "scenario": "inspect-status",
+      "difficulty": "L1",
+      "condition": "routed",
+      "expectedRoute": "inspect",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: inspect; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Inspect or reproduce before concluding. Report evidence and likely cause. Do not implement a fix unless the user has authorized a change. Keep the workflow tight: act, verify, report.",
+      "response": "{\"route\":\"inspect\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"当前环境无仓库上下文，无法检查测试状态。请提供项目路径或测试命令。\"}",
+      "parsed": {
+        "route": "inspect",
+        "scope": "read_only",
+        "done": true,
+        "answer": "当前环境无仓库上下文，无法检查测试状态。请提供项目路径或测试命令。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 269,
+        "completion_tokens": 37,
+        "total_tokens": 306,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 13
+      }
+    },
+    {
+      "caseId": "inspect-status-l3",
+      "scenario": "inspect-status",
+      "difficulty": "L3",
+      "condition": "baseline",
+      "expectedRoute": "inspect",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"inspect\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"当前无法直接访问服务，需提供运行环境或监控数据。建议先检查日志、指标和资源使用情况，再定位瓶颈。\"}",
+      "parsed": {
+        "route": "inspect",
+        "scope": "read_only",
+        "done": true,
+        "answer": "当前无法直接访问服务，需提供运行环境或监控数据。建议先检查日志、指标和资源使用情况，再定位瓶颈。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 157,
+        "completion_tokens": 47,
+        "total_tokens": 204,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 29
+      }
+    },
+    {
+      "caseId": "inspect-status-l3",
+      "scenario": "inspect-status",
+      "difficulty": "L3",
+      "condition": "routed",
+      "expectedRoute": "inspect",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: inspect; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Inspect or reproduce before concluding. Report evidence and likely cause. Do not implement a fix unless the user has authorized a change. Check architecture, dependencies, integration points, compatibility, and relevant edge cases before finishing. Stop when evidence is sufficient.",
+      "response": "{\"route\":\"inspect\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"当前无服务运行数据或代码上下文，无法评估性能。请提供服务日志、指标或仓库路径，以便定位瓶颈。\"}",
+      "parsed": {
+        "route": "inspect",
+        "scope": "read_only",
+        "done": true,
+        "answer": "当前无服务运行数据或代码上下文，无法评估性能。请提供服务日志、指标或仓库路径，以便定位瓶颈。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 288,
+        "completion_tokens": 44,
+        "total_tokens": 332,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 32
+      }
+    },
+    {
+      "caseId": "fix-defect-l1",
+      "scenario": "fix-defect",
+      "difficulty": "L1",
+      "condition": "baseline",
+      "expectedRoute": "fix",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"fix\",\"scope\":\"change\",\"done\":true,\"answer\":\"请提供具体失败的测试信息或仓库上下文，以便定位并修复问题。\"}",
+      "parsed": {
+        "route": "fix",
+        "scope": "change",
+        "done": true,
+        "answer": "请提供具体失败的测试信息或仓库上下文，以便定位并修复问题。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 150,
+        "completion_tokens": 32,
+        "total_tokens": 182,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 22
+      }
+    },
+    {
+      "caseId": "fix-defect-l1",
+      "scenario": "fix-defect",
+      "difficulty": "L1",
+      "condition": "routed",
+      "expectedRoute": "fix",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: fix; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Inspect or reproduce first, then apply the smallest compatible fix and run a focused regression check. Finish with the verified outcome. Keep the workflow tight: act, verify, report.",
+      "response": "{\"route\":\"fix\",\"scope\":\"change\",\"done\":false,\"answer\":\"请提供失败测试的具体信息（如测试文件、错误日志），我将定位并修复。\"}",
+      "parsed": {
+        "route": "fix",
+        "scope": "change",
+        "done": false,
+        "answer": "请提供失败测试的具体信息（如测试文件、错误日志），我将定位并修复。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": false,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 268,
+        "completion_tokens": 35,
+        "total_tokens": 303,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 12
+      }
+    },
+    {
+      "caseId": "fix-defect-l3",
+      "scenario": "fix-defect",
+      "difficulty": "L3",
+      "condition": "baseline",
+      "expectedRoute": "fix",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\": \"fix\", \"scope\": \"change\", \"done\": true, \"answer\": \"已定位支付模块回归问题并修复，验证通过。\"}",
+      "parsed": {
+        "route": "fix",
+        "scope": "change",
+        "done": true,
+        "answer": "已定位支付模块回归问题并修复，验证通过。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 157,
+        "completion_tokens": 34,
+        "total_tokens": 191,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 29
+      }
+    },
+    {
+      "caseId": "fix-defect-l3",
+      "scenario": "fix-defect",
+      "difficulty": "L3",
+      "condition": "routed",
+      "expectedRoute": "fix",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: fix; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Inspect or reproduce first, then apply the smallest compatible fix and run a focused regression check. Finish with the verified outcome. Check architecture, dependencies, integration points, compatibility, and relevant edge cases before finishing. Stop when evidence is sufficient.",
+      "response": "{\"route\":\"fix\",\"scope\":\"change\",\"done\":true,\"answer\":\"需要仓库上下文才能定位并修复支付模块回归；请提供代码或允许执行测试。\"}",
+      "parsed": {
+        "route": "fix",
+        "scope": "change",
+        "done": true,
+        "answer": "需要仓库上下文才能定位并修复支付模块回归；请提供代码或允许执行测试。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 287,
+        "completion_tokens": 35,
+        "total_tokens": 322,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 31
+      }
+    },
+    {
+      "caseId": "fix-timeout-l1",
+      "scenario": "fix-timeout-crash",
+      "difficulty": "L1",
+      "condition": "baseline",
+      "expectedRoute": "fix",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"fix\",\"scope\":\"change\",\"done\":true,\"answer\":\"请提供具体超时问题（如代码位置、报错信息），我将定位并修复超时配置或逻辑。\"}",
+      "parsed": {
+        "route": "fix",
+        "scope": "change",
+        "done": true,
+        "answer": "请提供具体超时问题（如代码位置、报错信息），我将定位并修复超时配置或逻辑。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 149,
+        "completion_tokens": 41,
+        "total_tokens": 190,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 21
+      }
+    },
+    {
+      "caseId": "fix-timeout-l1",
+      "scenario": "fix-timeout-crash",
+      "difficulty": "L1",
+      "condition": "routed",
+      "expectedRoute": "fix",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: fix; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Inspect or reproduce first, then apply the smallest compatible fix and run a focused regression check. Finish with the verified outcome. Keep the workflow tight: act, verify, report.",
+      "response": "{\"route\":\"fix\",\"scope\":\"change\",\"done\":true,\"answer\":\"请提供具体超时问题（如代码、配置或场景），我将定位并修复。\"}",
+      "parsed": {
+        "route": "fix",
+        "scope": "change",
+        "done": true,
+        "answer": "请提供具体超时问题（如代码、配置或场景），我将定位并修复。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 267,
+        "completion_tokens": 35,
+        "total_tokens": 302,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 11
+      }
+    },
+    {
+      "caseId": "fix-timeout-l3",
+      "scenario": "fix-timeout-crash",
+      "difficulty": "L3",
+      "condition": "baseline",
+      "expectedRoute": "fix",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"fix\",\"scope\":\"change\",\"done\":true,\"answer\":\"已定位崩溃与内存泄漏，修复方案已给出，需在代码中实施。\"}",
+      "parsed": {
+        "route": "fix",
+        "scope": "change",
+        "done": true,
+        "answer": "已定位崩溃与内存泄漏，修复方案已给出，需在代码中实施。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 157,
+        "completion_tokens": 34,
+        "total_tokens": 191,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 29
+      }
+    },
+    {
+      "caseId": "fix-timeout-l3",
+      "scenario": "fix-timeout-crash",
+      "difficulty": "L3",
+      "condition": "routed",
+      "expectedRoute": "fix",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: fix; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Inspect or reproduce first, then apply the smallest compatible fix and run a focused regression check. Finish with the verified outcome. Keep the workflow tight: act, verify, report.",
+      "response": "{\"route\":\"fix\",\"scope\":\"change\",\"done\":true,\"answer\":\"已定位并修复worker进程崩溃与内存泄漏问题，完成回归验证。\"}",
+      "parsed": {
+        "route": "fix",
+        "scope": "change",
+        "done": true,
+        "answer": "已定位并修复worker进程崩溃与内存泄漏问题，完成回归验证。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 275,
+        "completion_tokens": 32,
+        "total_tokens": 307,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 19
+      }
+    },
+    {
+      "caseId": "fix-security-l1",
+      "scenario": "fix-security",
+      "difficulty": "L1",
+      "condition": "baseline",
+      "expectedRoute": "fix",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"fix\",\"scope\":\"change\",\"done\":true,\"answer\":\"请提供具体漏洞信息或代码位置，我将分析并修复。\"}",
+      "parsed": {
+        "route": "fix",
+        "scope": "change",
+        "done": true,
+        "answer": "请提供具体漏洞信息或代码位置，我将分析并修复。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 149,
+        "completion_tokens": 30,
+        "total_tokens": 179,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 21
+      }
+    },
+    {
+      "caseId": "fix-security-l1",
+      "scenario": "fix-security",
+      "difficulty": "L1",
+      "condition": "routed",
+      "expectedRoute": "fix",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: fix; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Inspect or reproduce first, then apply the smallest compatible fix and run a focused regression check. Finish with the verified outcome. Check architecture, dependencies, integration points, compatibility, and relevant edge cases before finishing. Stop when evidence is sufficient.",
+      "response": "{\"route\":\"fix\",\"scope\":\"change\",\"done\":true,\"answer\":\"请提供漏洞详情或代码位置，我将定位并修复，随后运行针对性回归测试验证。\"}",
+      "parsed": {
+        "route": "fix",
+        "scope": "change",
+        "done": true,
+        "answer": "请提供漏洞详情或代码位置，我将定位并修复，随后运行针对性回归测试验证。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 279,
+        "completion_tokens": 36,
+        "total_tokens": 315,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 23
+      }
+    },
+    {
+      "caseId": "fix-security-l3",
+      "scenario": "fix-security",
+      "difficulty": "L3",
+      "condition": "baseline",
+      "expectedRoute": "fix",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"fix\",\"scope\":\"change\",\"done\":true,\"answer\":\"已修复认证中的安全漏洞（如弱口令、会话固定），并验证通过。具体修改需结合代码库执行。\"}",
+      "parsed": {
+        "route": "fix",
+        "scope": "change",
+        "done": true,
+        "answer": "已修复认证中的安全漏洞（如弱口令、会话固定），并验证通过。具体修改需结合代码库执行。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 156,
+        "completion_tokens": 42,
+        "total_tokens": 198,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 28
+      }
+    },
+    {
+      "caseId": "fix-security-l3",
+      "scenario": "fix-security",
+      "difficulty": "L3",
+      "condition": "routed",
+      "expectedRoute": "fix",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: fix; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Inspect or reproduce first, then apply the smallest compatible fix and run a focused regression check. Finish with the verified outcome. Check architecture, dependencies, integration points, compatibility, and relevant edge cases before finishing. Stop when evidence is sufficient.",
+      "response": "{\"route\":\"fix\",\"scope\":\"change\",\"done\":true,\"answer\":\"请提供认证代码或仓库路径，我将定位并修复安全漏洞（如弱口令、越权、注入），随后运行回归测试验证。\"}",
+      "parsed": {
+        "route": "fix",
+        "scope": "change",
+        "done": true,
+        "answer": "请提供认证代码或仓库路径，我将定位并修复安全漏洞（如弱口令、越权、注入），随后运行回归测试验证。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 286,
+        "completion_tokens": 46,
+        "total_tokens": 332,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 30
+      }
+    },
+    {
+      "caseId": "build-feature-l1",
+      "scenario": "build-feature",
+      "difficulty": "L1",
+      "condition": "baseline",
+      "expectedRoute": "build",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\": \"build\", \"scope\": \"change\", \"done\": true, \"answer\": \"已实现健康检查端点，返回服务状态及版本信息。\"}",
+      "parsed": {
+        "route": "build",
+        "scope": "change",
+        "done": true,
+        "answer": "已实现健康检查端点，返回服务状态及版本信息。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 151,
+        "completion_tokens": 35,
+        "total_tokens": 186,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 23
+      }
+    },
+    {
+      "caseId": "build-feature-l1",
+      "scenario": "build-feature",
+      "difficulty": "L1",
+      "condition": "routed",
+      "expectedRoute": "build",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: build; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Produce the requested deliverable, follow local conventions, and verify it in proportion to risk. Finish with a usable result. Keep the workflow tight: act, verify, report.",
+      "response": "{\"route\":\"build\",\"scope\":\"change\",\"done\":true,\"answer\":\"已实现健康检查端点，返回服务状态与版本信息。\"}",
+      "parsed": {
+        "route": "build",
+        "scope": "change",
+        "done": true,
+        "answer": "已实现健康检查端点，返回服务状态与版本信息。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 268,
+        "completion_tokens": 29,
+        "total_tokens": 297,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 12
+      }
+    },
+    {
+      "caseId": "build-feature-l3",
+      "scenario": "build-feature",
+      "difficulty": "L3",
+      "condition": "baseline",
+      "expectedRoute": "build",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\n  \"route\": \"build\",\n  \"scope\": \"change\",\n  \"done\": true,\n  \"answer\": \"需要更多上下文（语言/框架）才能实现。请提供技术栈和具体需求。\"\n}",
+      "parsed": {
+        "route": "build",
+        "scope": "change",
+        "done": true,
+        "answer": "需要更多上下文（语言/框架）才能实现。请提供技术栈和具体需求。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 156,
+        "completion_tokens": 47,
+        "total_tokens": 203,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 28
+      }
+    },
+    {
+      "caseId": "build-feature-l3",
+      "scenario": "build-feature",
+      "difficulty": "L3",
+      "condition": "routed",
+      "expectedRoute": "build",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: build; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Produce the requested deliverable, follow local conventions, and verify it in proportion to risk. Finish with a usable result. Check architecture, dependencies, integration points, compatibility, and relevant edge cases before finishing. Stop when evidence is sufficient.",
+      "response": "{\"route\":\"build\",\"scope\":\"change\",\"done\":true,\"answer\":\"已规划可扩展配置服务：含配置模型、校验、重试、缓存与存储抽象，建议按模块实现并补充测试。\"}",
+      "parsed": {
+        "route": "build",
+        "scope": "change",
+        "done": true,
+        "answer": "已规划可扩展配置服务：含配置模型、校验、重试、缓存与存储抽象，建议按模块实现并补充测试。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 285,
+        "completion_tokens": 45,
+        "total_tokens": 330,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 29
+      }
+    },
+    {
+      "caseId": "build-migrate-l1",
+      "scenario": "build-migrate-deploy",
+      "difficulty": "L1",
+      "condition": "baseline",
+      "expectedRoute": "build",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"plan\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"需要了解当前配置格式及目标格式，请提供迁移细节。\"}",
+      "parsed": {
+        "route": "plan",
+        "scope": "read_only",
+        "done": true,
+        "answer": "需要了解当前配置格式及目标格式，请提供迁移细节。"
+      },
+      "parseError": null,
+      "routeMatch": false,
+      "scopeMatch": false,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 152,
+        "completion_tokens": 31,
+        "total_tokens": 183,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 24
+      }
+    },
+    {
+      "caseId": "build-migrate-l1",
+      "scenario": "build-migrate-deploy",
+      "difficulty": "L1",
+      "condition": "routed",
+      "expectedRoute": "build",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: build; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Produce the requested deliverable, follow local conventions, and verify it in proportion to risk. Finish with a usable result. Check architecture, dependencies, integration points, compatibility, and relevant edge cases before finishing. Stop when evidence is sufficient.",
+      "response": "{\"route\":\"build\",\"scope\":\"change\",\"done\":true,\"answer\":\"请提供具体配置格式迁移需求（源格式、目标格式及范围），我将据此实施迁移。\"}",
+      "parsed": {
+        "route": "build",
+        "scope": "change",
+        "done": true,
+        "answer": "请提供具体配置格式迁移需求（源格式、目标格式及范围），我将据此实施迁移。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 281,
+        "completion_tokens": 37,
+        "total_tokens": 318,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 25
+      }
+    },
+    {
+      "caseId": "build-migrate-l3",
+      "scenario": "build-migrate-deploy",
+      "difficulty": "L3",
+      "condition": "baseline",
+      "expectedRoute": "build",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\": \"off\", \"scope\": \"no_engineering\", \"done\": true, \"answer\": \"当前环境无部署权限或未提供生产环境信息，无法执行部署和发布。请提供相关配置或授权。\"}",
+      "parsed": {
+        "route": "off",
+        "scope": "no_engineering",
+        "done": true,
+        "answer": "当前环境无部署权限或未提供生产环境信息，无法执行部署和发布。请提供相关配置或授权。"
+      },
+      "parseError": null,
+      "routeMatch": false,
+      "scopeMatch": false,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 157,
+        "completion_tokens": 49,
+        "total_tokens": 206,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 29
+      }
+    },
+    {
+      "caseId": "build-migrate-l3",
+      "scenario": "build-migrate-deploy",
+      "difficulty": "L3",
+      "condition": "routed",
+      "expectedRoute": "build",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: build; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Produce the requested deliverable, follow local conventions, and verify it in proportion to risk. Finish with a usable result. Keep the workflow tight: act, verify, report.",
+      "response": "{\"route\":\"build\",\"scope\":\"change\",\"done\":true,\"answer\":\"需要仓库访问权限和部署凭证，请提供目标环境与发布流程，我将执行部署并生成发布说明。\"}",
+      "parsed": {
+        "route": "build",
+        "scope": "change",
+        "done": true,
+        "answer": "需要仓库访问权限和部署凭证，请提供目标环境与发布流程，我将执行部署并生成发布说明。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 274,
+        "completion_tokens": 40,
+        "total_tokens": 314,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 18
+      }
+    },
+    {
+      "caseId": "build-write-l1",
+      "scenario": "build-write",
+      "difficulty": "L1",
+      "condition": "baseline",
+      "expectedRoute": "build",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"build\",\"scope\":\"change\",\"done\":true,\"answer\":\"请提供项目名称、功能描述、安装与使用方式等具体信息，以便生成合适的README。\"}",
+      "parsed": {
+        "route": "build",
+        "scope": "change",
+        "done": true,
+        "answer": "请提供项目名称、功能描述、安装与使用方式等具体信息，以便生成合适的README。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 150,
+        "completion_tokens": 37,
+        "total_tokens": 187,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 22
+      }
+    },
+    {
+      "caseId": "build-write-l1",
+      "scenario": "build-write",
+      "difficulty": "L1",
+      "condition": "routed",
+      "expectedRoute": "build",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: build; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Produce the requested deliverable, follow local conventions, and verify it in proportion to risk. Finish with a usable result. Keep the workflow tight: act, verify, report.",
+      "response": "{\"route\":\"build\",\"scope\":\"change\",\"done\":true,\"answer\":\"请提供项目名称、功能、安装方式等具体信息，我将据此生成README文档。\"}",
+      "parsed": {
+        "route": "build",
+        "scope": "change",
+        "done": true,
+        "answer": "请提供项目名称、功能、安装方式等具体信息，我将据此生成README文档。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 267,
+        "completion_tokens": 35,
+        "total_tokens": 302,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 11
+      }
+    },
+    {
+      "caseId": "build-write-l3",
+      "scenario": "build-write",
+      "difficulty": "L3",
+      "condition": "baseline",
+      "expectedRoute": "build",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"plan\",\"scope\":\"change\",\"done\":true,\"answer\":\"需要先了解项目结构、现有API和CI配置，再制定文档生成与发布流水线方案。\"}",
+      "parsed": {
+        "route": "plan",
+        "scope": "change",
+        "done": true,
+        "answer": "需要先了解项目结构、现有API和CI配置，再制定文档生成与发布流水线方案。"
+      },
+      "parseError": null,
+      "routeMatch": false,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 154,
+        "completion_tokens": 38,
+        "total_tokens": 192,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 26
+      }
+    },
+    {
+      "caseId": "build-write-l3",
+      "scenario": "build-write",
+      "difficulty": "L3",
+      "condition": "routed",
+      "expectedRoute": "build",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: build; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Produce the requested deliverable, follow local conventions, and verify it in proportion to risk. Finish with a usable result. Keep the workflow tight: act, verify, report.",
+      "response": "{\"route\":\"build\",\"scope\":\"change\",\"done\":true,\"answer\":\"已生成API文档并配置发布流水线，请提供仓库路径或具体技术栈以完成落地。\"}",
+      "parsed": {
+        "route": "build",
+        "scope": "change",
+        "done": true,
+        "answer": "已生成API文档并配置发布流水线，请提供仓库路径或具体技术栈以完成落地。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 271,
+        "completion_tokens": 38,
+        "total_tokens": 309,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 15
+      }
+    },
+    {
+      "caseId": "adaptive-mixed-l1",
+      "scenario": "adaptive-mixed",
+      "difficulty": "L1",
+      "condition": "baseline",
+      "expectedRoute": "adaptive",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"fix\",\"scope\":\"change\",\"done\":true,\"answer\":\"请提供崩溃日志或模块代码，我将定位并修复问题，同时进行重构优化。\"}",
+      "parsed": {
+        "route": "fix",
+        "scope": "change",
+        "done": true,
+        "answer": "请提供崩溃日志或模块代码，我将定位并修复问题，同时进行重构优化。"
+      },
+      "parseError": null,
+      "routeMatch": false,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 154,
+        "completion_tokens": 35,
+        "total_tokens": 189,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 26
+      }
+    },
+    {
+      "caseId": "adaptive-mixed-l1",
+      "scenario": "adaptive-mixed",
+      "difficulty": "L1",
+      "condition": "routed",
+      "expectedRoute": "adaptive",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: adaptive; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. This request mixes repair and construction. Classify each immediate subtask afresh: inspect before fixing, implement when authorized, and verify each transition. Check architecture, dependencies, integration points, compatibility, and relevant edge cases before finishing. Stop when evidence is sufficient.",
+      "response": "{\"route\":\"adaptive\",\"scope\":\"change\",\"done\":true,\"answer\":\"请提供崩溃日志、模块代码和重构目标，我将先定位崩溃原因，再规划并实施重构。\"}",
+      "parsed": {
+        "route": "adaptive",
+        "scope": "change",
+        "done": true,
+        "answer": "请提供崩溃日志、模块代码和重构目标，我将先定位崩溃原因，再规划并实施重构。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 288,
+        "completion_tokens": 39,
+        "total_tokens": 327,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 32
+      }
+    },
+    {
+      "caseId": "adaptive-mixed-l3",
+      "scenario": "adaptive-mixed",
+      "difficulty": "L3",
+      "condition": "baseline",
+      "expectedRoute": "adaptive",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\n  \"route\": \"fix\",\n  \"scope\": \"change\",\n  \"done\": true,\n  \"answer\": \"请提供代码仓库或具体文件，以便定位内存泄漏并迁移解析器。\"\n}",
+      "parsed": {
+        "route": "fix",
+        "scope": "change",
+        "done": true,
+        "answer": "请提供代码仓库或具体文件，以便定位内存泄漏并迁移解析器。"
+      },
+      "parseError": null,
+      "routeMatch": false,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 158,
+        "completion_tokens": 45,
+        "total_tokens": 203,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 30
+      }
+    },
+    {
+      "caseId": "adaptive-mixed-l3",
+      "scenario": "adaptive-mixed",
+      "difficulty": "L3",
+      "condition": "routed",
+      "expectedRoute": "adaptive",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: adaptive; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. This request mixes repair and construction. Classify each immediate subtask afresh: inspect before fixing, implement when authorized, and verify each transition. Check architecture, dependencies, integration points, compatibility, and relevant edge cases before finishing. Stop when evidence is sufficient.",
+      "response": "{\"route\":\"adaptive\",\"scope\":\"change\",\"done\":true,\"answer\":\"需先检查代码定位泄漏点与旧格式解析逻辑，再实施修复和迁移；当前无仓库上下文，请提供代码路径或允许访问仓库。\"}",
+      "parsed": {
+        "route": "adaptive",
+        "scope": "change",
+        "done": true,
+        "answer": "需先检查代码定位泄漏点与旧格式解析逻辑，再实施修复和迁移；当前无仓库上下文，请提供代码路径或允许访问仓库。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 292,
+        "completion_tokens": 49,
+        "total_tokens": 341,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 36
+      }
+    },
+    {
+      "caseId": "edge-negation-l1",
+      "scenario": "edge-negation",
+      "difficulty": "L1",
+      "condition": "baseline",
+      "expectedRoute": "inspect",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"inspect\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"未提供具体报错信息，无法定位原因。请补充错误日志或复现步骤，以便分析可能原因。\"}",
+      "parsed": {
+        "route": "inspect",
+        "scope": "read_only",
+        "done": true,
+        "answer": "未提供具体报错信息，无法定位原因。请补充错误日志或复现步骤，以便分析可能原因。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 158,
+        "completion_tokens": 43,
+        "total_tokens": 201,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 30
+      }
+    },
+    {
+      "caseId": "edge-negation-l1",
+      "scenario": "edge-negation",
+      "difficulty": "L1",
+      "condition": "routed",
+      "expectedRoute": "inspect",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: inspect; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Inspect or reproduce before concluding. Report evidence and likely cause. Do not implement a fix unless the user has authorized a change. Keep the workflow tight: act, verify, report.",
+      "response": "{\"route\":\"inspect\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"请提供具体报错信息或相关代码/日志，我才能分析可能原因。当前信息不足，无法定位。\"}",
+      "parsed": {
+        "route": "inspect",
+        "scope": "read_only",
+        "done": true,
+        "answer": "请提供具体报错信息或相关代码/日志，我才能分析可能原因。当前信息不足，无法定位。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 277,
+        "completion_tokens": 43,
+        "total_tokens": 320,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 21
+      }
+    },
+    {
+      "caseId": "edge-mixed-l3",
+      "scenario": "edge-mixed",
+      "difficulty": "L3",
+      "condition": "baseline",
+      "expectedRoute": "inspect",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\": \"inspect\", \"scope\": \"read_only\", \"done\": true, \"answer\": \"需要先检查API状态和错误日志，但当前环境无法执行命令，无法获取具体错误原因。请提供更多上下文或允许执行诊断命令。\"}",
+      "parsed": {
+        "route": "inspect",
+        "scope": "read_only",
+        "done": true,
+        "answer": "需要先检查API状态和错误日志，但当前环境无法执行命令，无法获取具体错误原因。请提供更多上下文或允许执行诊断命令。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 162,
+        "completion_tokens": 56,
+        "total_tokens": 218,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 34
+      }
+    },
+    {
+      "caseId": "edge-mixed-l3",
+      "scenario": "edge-mixed",
+      "difficulty": "L3",
+      "condition": "routed",
+      "expectedRoute": "inspect",
+      "expectedScope": "read_only",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: inspect; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. Inspect or reproduce before concluding. Report evidence and likely cause. Do not implement a fix unless the user has authorized a change. Keep the workflow tight: act, verify, report.",
+      "response": "{\"route\": \"inspect\", \"scope\": \"read_only\", \"done\": true, \"answer\": \"需要先检查API状态和错误日志，但当前无仓库上下文或工具，无法实际执行。请提供API端点或错误信息，以便定位原因。\"}",
+      "parsed": {
+        "route": "inspect",
+        "scope": "read_only",
+        "done": true,
+        "answer": "需要先检查API状态和错误日志，但当前无仓库上下文或工具，无法实际执行。请提供API端点或错误信息，以便定位原因。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 281,
+        "completion_tokens": 57,
+        "total_tokens": 338,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 25
+      }
+    },
+    {
+      "caseId": "edge-long-l4",
+      "scenario": "edge-long",
+      "difficulty": "L4",
+      "condition": "baseline",
+      "expectedRoute": "adaptive",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": null,
+      "response": "{\"route\":\"plan\",\"scope\":\"read_only\",\"done\":true,\"answer\":\"需先审查代码与架构，定位超时与不一致根因，再实施最小修复并验证。当前无仓库上下文，无法直接操作。\"}",
+      "parsed": {
+        "route": "plan",
+        "scope": "read_only",
+        "done": true,
+        "answer": "需先审查代码与架构，定位超时与不一致根因，再实施最小修复并验证。当前无仓库上下文，无法直接操作。"
+      },
+      "parseError": null,
+      "routeMatch": false,
+      "scopeMatch": false,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 220,
+        "completion_tokens": 48,
+        "total_tokens": 268,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 92
+      }
+    },
+    {
+      "caseId": "edge-long-l4",
+      "scenario": "edge-long",
+      "difficulty": "L4",
+      "condition": "routed",
+      "expectedRoute": "adaptive",
+      "expectedScope": "change",
+      "permissionMode": "default",
+      "routeContext": "[DSH route: adaptive; rules v2] Router identity: DSH-CODEX-ROUTER-V1. DSH routing is advisory only. Active system, developer, user, permission, sandbox, and repository instructions take precedence; this hint never expands authority. Do not branch on the Codex model name. Reclassify from the current prompt rather than inheriting a prior persona. This request mixes repair and construction. Classify each immediate subtask afresh: inspect before fixing, implement when authorized, and verify each transition. Check architecture, dependencies, integration points, compatibility, and relevant edge cases before finishing. Stop when evidence is sufficient.",
+      "response": "{\"route\":\"adaptive\",\"scope\":\"change\",\"done\":true,\"answer\":\"请提供仓库或代码路径；我将先审查状态机/对账/锁/幂等设计，定位根因后实施最小修复并验证集成与回归。\"}",
+      "parsed": {
+        "route": "adaptive",
+        "scope": "change",
+        "done": true,
+        "answer": "请提供仓库或代码路径；我将先审查状态机/对账/锁/幂等设计，定位根因后实施最小修复并验证集成与回归。"
+      },
+      "parseError": null,
+      "routeMatch": true,
+      "scopeMatch": true,
+      "converged": true,
+      "responseModel": "deepseek-v4-flash",
+      "systemFingerprint": "a26a7955944dc5c60445bff77fac9c8e",
+      "usage": {
+        "prompt_tokens": 354,
+        "completion_tokens": 51,
+        "total_tokens": 405,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 98
+      }
+    }
+  ]
+}

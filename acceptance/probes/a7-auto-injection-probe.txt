@@ -1,0 +1,29 @@
+# Gate A7 — Automatic UserPromptSubmit additionalContext injection probe (final)
+
+## Result
+
+Gate A7 **PASSES** after the UTF-8 stdin fix in the Windows PowerShell hook entry.
+
+## Evidence chain
+
+1. Pre-fix probe (session 01a00d95-341f-77b1-a62f-251fbb516b40): the `fix`-routed
+   Chinese prompt was decoded as GBK before reaching the router (`淇鎶ラ敊锛...`), no
+   signal matched, the hook emitted no context, and the model replied `none`.
+2. Pipeline proof: a temporary probe plugin hook (unconditional fixed marker
+   `PROBE-MARKER-7F3A9C2E`) had its output injected into the request as a developer
+   message (request input item role=developer), proving the host does not drop hook
+   output.
+3. Root cause: Codex pipes UTF-8 bytes; `[Console]::In.ReadToEnd()` used the console
+   input codepage (GBK/936). Mojibake breaks both Chinese signal regexes and English
+   `\b` boundaries next to mangled CJK characters.
+4. Post-fix end-to-end (probe session 01a00da4-8b9d-73b0-9081-53d3436e03b3): with
+   `[Console]::InputEncoding` set to UTF-8, the DSH router parsed the Chinese prompt,
+   and the request body contained a developer message:
+   `[DSH route: fix] Router identity: DSH-CODEX-ROUTER-V1 ...`.
+
+## Fix delivered
+
+- `hooks/hooks.json` Windows entry sets UTF-8 input encoding before reading stdin.
+- `hooks/router.ps1` sets `[Console]::InputEncoding` defensively.
+- `tests/Test-Router.ps1` includes a UTF-8 Chinese stdin regression test.
+- Build version: `0.1.0+codex.20260817110000`.

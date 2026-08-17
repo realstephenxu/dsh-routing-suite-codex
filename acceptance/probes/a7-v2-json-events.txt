@@ -1,0 +1,11 @@
+# Gate A7 — v2 JSON event stream (raw)
+
+sessionId: 01a00d96-a182-7801-8e7d-2bba41b66662
+
+{"type":"thread.started","thread_id":"01a00d96-a182-7801-8e7d-2bba41b66662"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"none"}}
+{"type":"turn.completed","usage":{"input_tokens":13948,"cached_input_tokens":13824,"cache_write_input_tokens":0,"output_tokens":298,"reasoning_output_tokens":296}}
+
+Note: the stream contains no hook event payload; the model-facing context did not
+include the UserPromptSubmit hook's additionalContext.
